@@ -10,11 +10,32 @@
 
     <!-- FAVICON -->
 
+<<<<<<< HEAD
     <link rel="shortcut icon" href="static/images/icon.png?{{ cache_id }}">
+=======
+<<<<<<< HEAD
+    <link rel="shortcut icon" href="{{ url_for('static', filename='images/icon.png?{{ id }}') }}">
+=======
+    <link rel="shortcut icon" href="static/images/icon.png?{{ cache_id }}">
+>>>>>>> 4908bd8 (All_Task)
+>>>>>>> refs/remotes/origin/master
 
     <!-- **********************
 	 CSS styles
 	 ********************** -->
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/4-common.css') }}?{{ cache_id }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/3-header.css') }}?{{ cache_id }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/3-footer.css') }}?{{ cache_id  }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/6-filters.css')}}?{{ cache_id }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/8-places.css')}}?{{ cache_id }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/font-awesome.css')}}?{{ cache_id }}">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="../static/scripts/3-hbnb.js"></script>
+=======
+>>>>>>> refs/remotes/origin/master
 
     <link rel="stylesheet" href="static/styles/4-common.css?{{ cache_id }}">
     <link rel="stylesheet" href="static/styles/3-header.css?{{ cache_id }}">
@@ -24,6 +45,10 @@
     <link rel="stylesheet" href="static/styles/font-awesome.css?{{ cache_id }}">
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="static/scripts/3-hbnb.js"></script>
+<<<<<<< HEAD
+=======
+>>>>>>> 4908bd8 (All_Task)
+>>>>>>> refs/remotes/origin/master
   </head>
 
   <!-- **********************
@@ -37,7 +62,15 @@
 	 ********************** -->
 
     <header>
+<<<<<<< HEAD
       <div id="api_status"></div>
+=======
+<<<<<<< HEAD
+	<div id="api_status" class="available"></div>
+=======
+      <div id="api_status"></div>
+>>>>>>> 4908bd8 (All_Task)
+>>>>>>> refs/remotes/origin/master
     </header>
     <main>
       <div class="container">
@@ -76,7 +109,15 @@
 	    <h4>&nbsp;</h4>
 	    <ul class="popover">
 	      {% for amenity in amens|sort(attribute='name') %}
+<<<<<<< HEAD
 	      <LI><INPUT type="checkbox" data-id="{{ amenity.id }}" data-name="{{ amenity.name }}"/>{{ amenity.name }}</LI>
+=======
+<<<<<<< HEAD
+		<LI><INPUT style="margin-right: 10px;" type="checkbox" data-id="{{ amenity.id }}" data-name="{{ amenity.name}}">{{ amenity.name }}</LI>
+=======
+	      <LI><INPUT type="checkbox" data-id="{{ amenity.id }}" data-name="{{ amenity.name }}"/>{{ amenity.name }}</LI>
+>>>>>>> 4908bd8 (All_Task)
+>>>>>>> refs/remotes/origin/master
 	      {% endfor %}
 	    </ul>
 	  </div>
@@ -90,11 +131,20 @@
 
 	<section class="places">
 	  <h1>Places</h1>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> refs/remotes/origin/master
 
 	<!-- **********************
 	     BEGIN 1 PLACE
 	     ********************** -->
 
+<<<<<<< HEAD
+=======
+>>>>>>> 4908bd8 (All_Task)
+>>>>>>> refs/remotes/origin/master
 	</section>
       </div>
     </main>
@@ -105,4 +155,12 @@
       Holberton School
     </footer>
   </body>
+<<<<<<< HEAD
 </html
+=======
+<<<<<<< HEAD
+</html>
+=======
+</html
+>>>>>>> 4908bd8 (All_Task)
+>>>>>>> refs/remotes/origin/master

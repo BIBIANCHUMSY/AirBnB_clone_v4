@@ -1,3 +1,22 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+@charset "UTF-8";
+/** Holberton Practice Styles
+ * ----- Footer
+ */
+
+footer {
+	background: #FFFFFF;
+	height: 60px;
+	line-height: 60px;
+	width: 100%;
+	bottom: 0px;
+	position: relative;
+	text-align: center;
+	border-top: 1px solid #CCCCCC;
+=======
+>>>>>>> refs/remotes/origin/master
 footer {
     position: fixed;
     background: white;
@@ -13,4 +32,8 @@ footer p {
     bottom: 0;
     right: 0;
     left: 0;
+<<<<<<< HEAD
+=======
+>>>>>>> 4908bd8 (All_Task)
+>>>>>>> refs/remotes/origin/master
 }

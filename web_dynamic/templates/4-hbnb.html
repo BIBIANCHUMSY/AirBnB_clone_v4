@@ -10,6 +10,24 @@
 
     <!-- FAVICON -->
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+    <link rel="shortcut icon" href="{{ url_for('static', filename='images/icon.png?{{ id }}') }}">
+
+    <!-- **********************
+	 CSS styles
+	 ********************** -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/4-common.css') }}?{{ cache_id }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/3-header.css') }}?{{ cache_id }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/3-footer.css') }}?{{ cache_id  }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/6-filters.css')}}?{{ cache_id }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/8-places.css')}}?{{ cache_id }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/font-awesome.css')}}?{{ cache_id }}">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="../static/scripts/4-hbnb.js"></script>
+=======
+>>>>>>> refs/remotes/origin/master
     <link rel="shortcut icon" href="{{ url_for('static', filename='images/icon.png', variable=cache_id) }}">
 
     <!-- **********************
@@ -29,6 +47,10 @@
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="/static/scripts/4-hbnb.js"></script>
+<<<<<<< HEAD
+=======
+>>>>>>> 4908bd8 (All_Task)
+>>>>>>> refs/remotes/origin/master
   </head>
 
   <!-- **********************
@@ -38,16 +60,84 @@
   <body>
 
     <!-- **********************
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+	 HEADER
+	 ********************** -->
+
+    <header>
+	<div id="api_status" class="available"></div>
+=======
+>>>>>>> refs/remotes/origin/master
    HEADER
    ********************** -->
 
     <header>
       <div id="api_status">
       </div>
+<<<<<<< HEAD
+=======
+>>>>>>> 4908bd8 (All_Task)
+>>>>>>> refs/remotes/origin/master
     </header>
     <main>
       <div class="container">
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+	<!-- **********************
+	     FILTERS
+	     ********************** -->
+
+	<section class="filters">
+
+	  <!-- **********************
+	       LOCATIONS
+	       ********************** -->
+
+	  <div class="locations">
+	    <h3>States</h3>
+	    <h4>&nbsp;</h4>
+	    <ul class="popover">
+	      {% for state in states|dictsort %}
+	      <H2>{{ state[0] }}</H2>
+	      <UL>
+		{% for city in state[1].cities|sort(attribute='name') %}
+		<LI>{{ city.name }}</LI>
+		{% endfor %}
+	      </UL>
+	      {% endfor %}
+	    </ul>
+	  </div>
+
+	  <!-- **********************
+	       AMENITIES
+	       ********************** -->
+
+	  <div class="amenities">
+	    <h3>Amenities</h3>
+	    <h4>&nbsp;</h4>
+	    <ul class="popover">
+	      {% for amenity in amens|sort(attribute='name') %}
+		<LI><INPUT style="margin-right: 10px;" type="checkbox" data-id="{{ amenity.id }}" data-name="{{ amenity.name}}">{{ amenity.name }}</LI>
+	      {% endfor %}
+	    </ul>
+	  </div>
+
+	  <!-- **********************
+	       SEARCH BUTTON
+	       ********************** -->
+
+	  <button>Search</button>
+	</section>
+
+	<section class="places">
+	  <h1>Places</h1>
+	</section>
+=======
+>>>>>>> refs/remotes/origin/master
   <!-- **********************
        FILTERS
        ********************** -->
@@ -102,6 +192,10 @@
        ********************** -->
 
   </section>
+<<<<<<< HEAD
+=======
+>>>>>>> 4908bd8 (All_Task)
+>>>>>>> refs/remotes/origin/master
       </div>
     </main>
 
