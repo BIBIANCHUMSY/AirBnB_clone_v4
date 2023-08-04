@@ -4,11 +4,7 @@ Flask App that integrates with AirBnB static HTML Template
 """
 from flask import Flask, render_template, url_for
 from models import storage
-<<<<<<< HEAD
 import uuid
-=======
-from uuid import uuid4, UUID
->>>>>>> refs/remotes/origin/master
 
 # flask setup
 app = Flask(__name__)
@@ -27,11 +23,7 @@ def teardown_db(exception):
     storage.close()
 
 
-<<<<<<< HEAD
 @app.route('/3-hbnb')
-=======
-@app.route('/3-hbnb/')
->>>>>>> refs/remotes/origin/master
 def hbnb_filters(the_id=None):
     """
     handles request to custom template with states, cities & amentities
@@ -42,13 +34,8 @@ def hbnb_filters(the_id=None):
     places = storage.all('Place').values()
     users = dict([user.id, "{} {}".format(user.first_name, user.last_name)]
                  for user in storage.all('User').values())
-<<<<<<< HEAD
     cache_id = uuid.uuid4()
     return render_template('3-hbnb.html',
-=======
-    cache_id = str(uuid4())
-    return render_template('/3-hbnb.html',
->>>>>>> refs/remotes/origin/master
                            states=states,
                            amens=amens,
                            places=places,
